@@ -1,0 +1,54 @@
+body{
+	background: url('bg2.jpg') no-repeat center center fixed;
+	background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+nav{
+	padding: 20px;
+    background: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-container{
+    margin: 0px auto;
+    position: relative;
+    top: 70px;
+    padding: 100px;
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+    font-family: 'Esteban', serif;
+    width: 50%;
+}
+
+.main h1{
+	font-size: 30px;
+    font-family: 'Esteban', serif;		
+    padding: 10px 0px;
+}
+.main p{
+	font-size: 16px;
+    font-family: 'Esteban', serif;	
+}
+
+a{
+    font-family: 'Esteban', serif;	
+    color: white;
+    text-decoration: none;
+    padding:0px 10px;
+}
+a:hover{
+	/*text-decoration: underline;*/
+	color:lightgrey;
+}
+
+@media(max-width: 450px){
+	.main-container{
+		padding:50px;
+	}
+}
+
+/*font-family: 'Exo 2', sans-serif;*/
