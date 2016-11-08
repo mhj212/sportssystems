@@ -9,8 +9,7 @@ body{
 nav{
 	padding: 20px;
     background: rgba(0,0,0,0.5);
-    margin: 0 auto;
-    overflow: hidden;
+    position: relative;
 }
 
 .main-container{
@@ -34,17 +33,83 @@ nav{
     font-family: 'Esteban', serif;	
 }
 
-a{
+nav > a{
     font-family: 'Esteban', serif;	
     color: white;
     text-decoration: none;
-    padding:0px 10px;
+    padding: 20px 10px;
 }
+
+
 a:hover{
 	/*text-decoration: underline;*/
 	color:lightgrey;
 }
 
+.Homedropdown{
+    position: absolute;
+    width: 125px;
+    height: 100px;
+    padding:5px;
+    background-color: black;
+    left: 15px;
+    z-index: 10;
+}
+
+
+.Homedropdown a{
+    font-family: 'Esteban', serif;  
+    color: white;
+    text-decoration: none;  
+    display: block; 
+    padding: 5px 0px; 
+}
+
+.Reportsdropdown{
+    position: absolute;
+    width: 125px;
+    height: 30px;
+    padding:5px;
+    background-color: black;
+    left: 85px;
+    z-index: 10;
+}
+
+.Reportsdropdown a{
+    font-family: 'Esteban', serif;  
+    color: white;
+    text-decoration: none;  
+    display: block; 
+    padding: 5px 0px; 
+}
+
+.Statusdropdown{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    padding:5px;
+    background-color: black;
+    left: 285px;
+    z-index: 10;
+}
+
+.Statusdropdown a{
+    font-family: 'Esteban', serif;  
+    color: white;
+    text-decoration: none;  
+    display: block; 
+    padding: 5px 0px; 
+}
+
+.Statusdropdown a:hover{
+    color: lightgrey;
+}
+.Reportsdropdown a:hover{
+    color: lightgrey;
+}
+.Homedropdown a:hover{
+    color: lightgrey;
+}
 @media(max-width: 450px){
 	.main-container{
 		padding:50px;
